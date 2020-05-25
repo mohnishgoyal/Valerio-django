@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+	<title>Valerio Electric</title>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image" href="{% static "images/logo.jpg" %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+<section>
+<nav class="navbar navbar-expand-md navbar-light fixed-top">
+    <nav class="navbar navbar-light">
+      <a class="navbar-brand" href="{% url "index" %}">
+        <img src="{% static "images/logo.png" %}" width="60" height="60" alt="">
+      </a>
+  </nav>
+  <button id="navbarToggle" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'Valerio_app:app' %}">APP <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'Valerio_app:partners' %}">BECOME PARTNERS <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'Valerio_app:team' %}">TEAM <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'Valerio_app:blog' %}">BLOG <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'Valerio_app:contact' %}">CONTACT US <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</section>
+
+<section>
+  <div class="container partner1">
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <h1>Partner With Us</h1>
+        <p>Our Products will serve every business- retail owners, property managers as well as government agencies. Our Technology will surely help businesses increase their bottom line.</p>
+        <button class="btn btn-primary">Apply Now</button>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <img src="{% static "images/partner1.png" %}">
+      </div>
+    </div>
+  </div>
+</section>
+<br><br><br><br>
+<section>
+  <div class="partner2">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-4 ahead1">
+          <h6>Get Ahead</h6>
+          <h3>Your perks and <br> Benefits</h3>
+          <button class="btn btn-primary">Become a Partner</button>
+        </div>
+      </div>
+
+      <br>
+      <br>
+      <div class="row">
+
+        <div class="col-md-4">
+
+        </div>
+
+        <div class="col-md-4 hand">
+          <img src="{% static "images/hand.png" %}">
+          <br>
+          <br>
+          <h5>Earn additional revenue</h5>
+          <p> Create a new revenue stream by setting fees on charging points at parking lots of malls , corporations and hotels.</p>
+        </div>
+
+        <div class="col-md-4 business">
+          <img src="{% static "images/business.png" %}">
+          <br>
+          <br>
+          <h5>Attract more clients and visitors</h5>
+          <p>Charging attracts customers and keeps them around longer, thus increasing the time and money they spend in a store.</p>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col-md-4 ahead2">
+          <h6>Get Ahead</h6>
+          <h3>Your perks and <br> Benefits</h3>
+          <button class="btn btn-primary">Become a Partner</button>
+        </div>
+      </div>
+      <div class="row">
+
+        <div class="col-md-4">
+
+        </div>
+
+        <div class="col-md-4 people">
+          <img src="{% static "images/people.png" %}">
+          <br>
+          <br>
+          <h5>Improve brand image</h5>
+          <p>Installing charging points at your premises puts you on the map as an enviroment friendly establishment.</p>
+        </div>
+
+        <div class="col-md-4 messages">
+          <img src="{% static "images/messages.png" %}">
+          <br>
+          <br>
+          <h5>Employee satisfaction</h5>
+          <p>Access to charging facilities have become a necessity for many of your guests , visitors and employees.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<br><br><br><br>
+<section>
+  <div class="footer">
+    <ul class="icons">
+      <li><a href=""><i class="fa fa-facebook"></i></a></li>
+      <li><a href=""><i class="fa fa-instagram"></i></a></li>
+      <li><a href="https://www.linkedin.com/company/valerio-electric-pvt-ltd/"><i class="fa fa-linkedin"></i></a></li>
+    </ul>
+    <p><a href="{% url 'Valerio_app:termsofuse' %}">Terms of Use</a> &nbsp &nbsp <a href="{% url 'Valerio_app:privacy' %}">Privacy Policy</a></p>
+    <p class="copyright">&#169 2020 Valerio Electric</p>
+  </div>
+</section>
+
+<script src="{% static "js/jquery-3.4.1.slim.min.js" %}"></script>
+<script src="{% static "js/bootstrap.min.js" %}"></script>
+<script src="{% static "js/popper.min.js" %}"></script>
+<script src="{% static "js/script.js" %}"></script>
+</body>
+</html>

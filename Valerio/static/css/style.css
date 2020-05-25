@@ -1,0 +1,203 @@
+body{	
+	margin-top: 100px;
+	background-color: #ffffff;
+	color: #000000;
+}
+
+.navbar{
+	padding: 0rem 3rem;
+	font-weight: 500;
+	background-color: #ffffff;
+	height: 50px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navbar-brand img{
+	width: 40px;
+	height: 40px;
+}
+.navbar-light .navbar-nav .active>.nav-link::after {
+	content: '';
+	display: block;
+	position: relative;
+	width: 0px;
+	left: 50%;
+	bottom: -2px;
+	height: 2px;
+	background: #9BC1C9;
+	transition: all .10s;
+}
+
+.navbar-light .navbar-nav .active>.nav-link:hover::after {
+	width: 100%;
+	left: 0;
+	background: #124559 !important;
+	color: #124559 !important;
+}
+
+li{
+	padding-right: 60px; 
+	text-align: center;
+}
+
+@media (max-width: 768px){
+	li{
+		padding-right: 0px;
+	}
+
+	.navbar{
+		background-color: #ffffff;
+		box-shadow: none;
+		padding-top: 10px;
+	}
+
+	.navbar-nav{
+	color: #000000;
+	background-color: #ffffff;
+	width: 100%;
+}
+
+	.navbar-brand img{
+		width: 60px;
+		height: 60px;
+}
+
+	.team .card{
+		margin-bottom: 12px;
+	}
+
+	.ahead2{
+		display: none;
+	}
+
+	.partner2 .row .col-md-4{
+		margin-bottom: 1.5em;
+	}
+
+	.terms .container h1{
+		text-align: left;
+	}
+
+	.privacy .container h1{
+		text-align: left;
+	}
+
+}
+
+@media (min-width: 768px){
+	.ahead1{
+		display: none;
+	}
+}
+
+
+@media (max-width: 996px){
+	.partner1 .row img{
+		height: 65%;
+		margin-top: 2.5em;
+	}
+}
+
+.navbar-nav{
+	color: #000000;
+	background-color: #ffffff;
+}
+
+.navbar-light .navbar-nav .active>.nav-link:hover{
+	color: #124559 !important;
+	text-decoration: none;
+}
+
+.navbar-toggler{
+  background-color: #124559 !important;
+  border: none;
+  font-size: 2rem;
+}
+
+.navbar-light .navbar-toggler-icon{
+	background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMy4wLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAzMiAzMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzIgMzI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLnN0MHtmaWxsOm5vbmU7fQ0KCS5zdDF7ZmlsbDojRkZGRkZGO3N0cm9rZTojRkZGRkZGO3N0cm9rZS1taXRlcmxpbWl0OjEwO30NCjwvc3R5bGU+DQo8Zz4NCgk8dGl0bGU+YmFja2dyb3VuZDwvdGl0bGU+DQoJPHJlY3QgaWQ9ImNhbnZhc19iYWNrZ3JvdW5kIiB4PSItMSIgeT0iLTEiIGNsYXNzPSJzdDAiIHdpZHRoPSI1ODIiIGhlaWdodD0iNDAyIi8+DQo8L2c+DQo8Zz4NCgk8dGl0bGU+TGF5ZXIgMTwvdGl0bGU+DQoJPHBhdGggaWQ9InN2Z18xIiBjbGFzcz0ic3QxIiBkPSJNNCwxMGgyNGMxLjEsMCwyLTAuOSwyLTJzLTAuOS0yLTItMkg0QzIuOSw2LDIsNi45LDIsOFMyLjksMTAsNCwxMHogTTI4LDE0SDRjLTEuMSwwLTIsMC45LTIsMg0KCQlzMC45LDIsMiwyaDI0YzEuMSwwLDItMC45LDItMlMyOS4xLDE0LDI4LDE0eiBNMjgsMjJINGMtMS4xLDAtMiwwLjktMiwyczAuOSwyLDIsMmgyNGMxLjEsMCwyLTAuOSwyLTJTMjkuMSwyMiwyOCwyMnoiLz4NCjwvZz4NCjwvc3ZnPg0K');
+}
+
+.container{
+	text-align: center;
+	background-color: #ffffff;
+}
+
+.jumbotron{
+	margin-bottom: -30px;
+	background-color: #ffffff;
+	color: #000000;
+	text-align: center;
+}
+
+
+.partner1 .row h1{
+	margin-top: 2.5em;
+}
+
+
+.teamhead{
+	text-align: left !important;
+	padding-top: 40px;
+	text-decoration: overline;
+}
+
+.team{
+	padding-top: 50px;
+	margin-bottom: 50px; 
+}
+
+
+.team .card:hover{
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 6px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card{
+	border: none;
+	padding-right: 25px;
+}
+
+.privacy .container {
+	text-align: justify;
+}
+
+.privacy .container ul li{
+	text-align: justify;
+}
+
+.terms .container{
+	text-align: justify !important;
+}
+
+.terms .container ul li{
+	text-align: justify;
+}
+
+.footer{
+	background-color: #0072BC;
+	text-align: center;
+	margin-bottom: 0px;
+	color: #ffffff;
+}
+
+.footer > ul{
+	list-style: none;
+	padding-top: 20px;
+	margin-bottom: 0rem;
+}
+
+.footer li{
+	display: inline-block;
+	padding-right: 20px;
+	font-size: 25px;
+}
+.footer a{
+	color: #ffffff;
+}
+.footer p{
+	margin-bottom: .1rem
+}
+
+.footer .copyright{
+	padding-bottom: 16px;
+}

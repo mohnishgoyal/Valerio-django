@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+	<title>Valerio Electric</title>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image" href="{% static "images/logo.jpg" %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+<section>
+<nav class="navbar navbar-expand-md navbar-light fixed-top">
+    <nav class="navbar navbar-light">
+      <a class="navbar-brand" href="{% url "index" %}">
+        <img src="{% static "images/logo.jpg" %}" width="60" height="60" alt="">
+      </a>
+  </nav>
+  <button id="navbarToggle" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'Valerio_app:app' %}">APP <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'Valerio_app:partners' %}">BECOME PARTNERS <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'Valerio_app:team' %}">TEAM <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'Valerio_app:blog' %}">BLOG <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'Valerio_app:contact' %}">CONTACT US <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</section>
+
+<section>
+  <div class="container teamhead">
+    <h1>OUR <strong>TEAM</strong></h1>
+  </div>
+</section>
+
+<section class="team">
+  <div class="container">
+    <div class="row">
+      <div class="card col-lg-4 col-md-4 col-sm-12">
+        <img src="{% static "images/Sarthak.png" %}" class="card-img-top" alt="Sarthak">
+        <div class="card-body">
+          <h4 class="card-title">Sarthak Mahapatra</h4>
+          <h5 class="card-text">CEO</h5>
+          <p>I'm an undergraduate student pursuing Electronics and Instrumentation Engineering at BITS Pilani. I love solving real-life problems and my motto "If everything seems under control, you're just not going fast enough" drives me every day. I have been extremely interested in Automotives since my childhood and got an opportunity to follow my passion while leading an interdisciplinary student team that designed and manufactured BITS Pilani's first EV prototype, and the idea for Valerio Electric was borne out of it to ensure the fast adoption of electric vehicles.</p>
+          <div><em>sarthak.mahapatra99@gmail.com</em> &nbsp <a href="https://www.linkedin.com/in/sarthak-mahapatra-755641149/"><i class="fa fa-linkedin"></i></a></div>
+        </div>
+      </div>
+
+      <div class="card col-lg-4 col-md-4 col-sm-12">
+        <img src="{% static "images/Moksh.png" %}" class="card-img-top" alt="Moksh">
+        <div class="card-body">
+          <h4 class="card-title">Moksh Garg</h4>
+          <h5 class="card-text">COO</h5>
+          <p>I am a third-year undergraduate pursuing M.Sc. (Hons.) Economics & B.E. (Hons.) Electrical and Electronics from Birla Institute of Technology and Science, Pilani. I have worked professionally in several companies and organizations acquiring adequate knowledge in domains such as Business Development, Financial Analysis of Companies, Market Research, Brand Strategy, Visual Designing, Digital Marketing. Previous internship experience with Indian Angel Network (IAN) gave me a sense of the startup culture and was a great learning experience on evaluating startups and how to build one. I thrive upon always having to solve one problem after another and finding creative solutions to the same</p>
+          <div> <em>mokshgarg003@gmail.com</em> &nbsp<a href="https://www.linkedin.com/in/moksh-garg-008247188/"><i class="fa fa-linkedin"></i></a></div>
+        </div>
+      </div>
+
+      <div class="card col-lg-4 col-md-4 col-sm-12">
+        <img src="{% static "images/Nirav.png" %}" class="card-img-top" alt="Nirav">
+        <div class="card-body">
+          <h4 class="card-title">Nirav Bhandari</h4>
+          <h5 class="card-text">CTO</h5>
+          <p>I am an undergraduate student pursuing Electrical and Electronics Engineering at BITS Pilani. A puzzle-solving attitude and love for the subject I am studying gives me an avenue to explore upcoming new technologies. My fascination for electric vehicles soon led to me being the head of designing of BITS Pilani's first electric vehicle prototype. At Valerio, we plan to solve fundamental problems, which are hindrances to the adoption of electric mobility in India, and our mission is to build a product that revolutionizes not only the industry but also something that our users believe in and can't do without</p>
+          <div><em>nirav.bhandari@gmail.com</em> &nbsp<a href="https://www.linkedin.com/in/nirav-bhandari-3b500016b/"><i class="fa fa-linkedin"></i></a></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="footer">
+    <ul class="icons">
+      <li><a href=""><i class="fa fa-facebook"></i></a></li>
+      <li><a href=""><i class="fa fa-instagram"></i></a></li>
+      <li><a href="https://www.linkedin.com/company/valerio-electric-pvt-ltd/"><i class="fa fa-linkedin"></i></a></li>
+    </ul>
+    <p><a href="{% url 'Valerio_app:termsofuse' %}">Terms of Use</a> &nbsp &nbsp <a href="{% url 'Valerio_app:privacy' %}">Privacy Policy</a></p>
+    <p class="copyright">&#169 2020 Valerio Electric</p>
+  </div>
+</section>
+
+<script src="{% static "js/jquery-3.4.1.slim.min.js" %}"></script>
+<script src="{% static "js/bootstrap.min.js" %}"></script>
+<script src="{% static "js/popper.min.js" %}"></script>
+<script src="{% static "js/script.js" %}"></script>
+</body>
+</html>

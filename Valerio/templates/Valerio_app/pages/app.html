@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+	<title>Valerio Electric</title>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image" href="{% static "images/logo.jpg" %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+<section>
+<nav class="navbar navbar-expand-md navbar-light fixed-top">
+    <nav class="navbar navbar-light">
+      <a class="navbar-brand" href="{% url "index" %}">
+        <img src="{% static "images/logo.png" %}" width="60" height="60" alt="">
+      </a>
+  </nav>
+  <button id="navbarToggle" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'Valerio_app:app' %}">APP <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'Valerio_app:partners' %}">BECOME PARTNERS <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'Valerio_app:team' %}">TEAM <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'Valerio_app:blog' %}">BLOG <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'Valerio_app:contact' %}">CONTACT US <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</section>
+
+
+
+
+<section>
+  <div class="footer">
+    <ul class="icons">
+      <li><a href=""><i class="fa fa-facebook"></i></a></li>
+      <li><a href=""><i class="fa fa-instagram"></i></a></li>
+      <li><a href="https://www.linkedin.com/company/valerio-electric-pvt-ltd/"><i class="fa fa-linkedin"></i></a></li>
+    </ul>
+    <p><a href="{% url 'Valerio_app:termsofuse' %}">Terms of Use</a> &nbsp &nbsp <a href="{% url 'Valerio_app:privacy' %}">Privacy Policy</a></p>
+    <p class="copyright">&#169 2020 Valerio Electric</p>
+  </div>
+</section>
+
+<script src="{% static "js/jquery-3.4.1.slim.min.js" %}"></script>
+<script src="{% static "js/bootstrap.min.js" %}"></script>
+<script src="{% static "js/popper.min.js" %}"></script>
+<script src="{% static "js/script.js" %}"></script>
+</body>
+</html>
